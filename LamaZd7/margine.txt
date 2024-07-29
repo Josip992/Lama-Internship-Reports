@@ -1,0 +1,4 @@
+top:1,2 cm
+right:2,2 cm
+bottom: 1,9 cm
+left: 2,3 cm

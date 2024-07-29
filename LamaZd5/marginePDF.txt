@@ -1,0 +1,4 @@
+top 1,5cm
+right 1,5cm
+left 1,9 cm
+format A4 landscape

@@ -1,0 +1,98 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>{{asset "/LamaZd2/assets/zahtjev-za-prijavu-kvara.css"}}
+        
+    </style>
+</head>
+<body>
+    <table class="firstTable">
+        <tr>
+            <td colspan="1" rowspan="5" style="width: 70.5pt; height: 93px; vertical-align:top  text-align: center; vertical-align: middle;">
+                <img src="{{asset "/LamaZd2/images/efst.jpg" "dataURI"}}" style="width: 85px; height: 85px;">
+            </td>
+            <td colspan="1" rowspan="1" class="centreMiddleBold">{{PredlozakTitle}}</td>
+            <td colspan="1" rowspan="1" class="thirdColumnFtDimensionsPadding">Oznaka</td>
+            <td colspan="1" rowspan="1" class="fourthColumnFirstRowDimensionsPadding"></td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1" class="centreMiddleBold">DOKUMENTIRANI OBRASCI</td>
+            <td colspan="1" rowspan="1" class="thirdColumnFtDimensionsPadding">Izdanje</td>
+            <td colspan="1" rowspan="1" class="frFtDimensionsPading">{{PredlozakIzdanje}}</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="3" class="secondColumnThirdRowDimensionsCentre">{{PredlozakNaziv}}</td>
+            <td colspan="1" rowspan="1" class="thirdColumnFtDimensionsPadding">Datum</td>
+            <td colspan="1" rowspan="1" class="frFtDimensionsPading">{{formatDate DatumOdobrenja}}</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1" class="thirdColumnFtDimensionsPadding"">Odborio</td>
+            <td colspan="1" rowspan="1" class="frFtDimensionsPading">{{Odobrio}}</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1" class="thirdColumnFtDimensionsPadding">Br. Str.</td>
+            <td colspan="1" rowspan="1" class="frFtDimensionsPading">{{BrStranica}}</td>
+        </tr>
+    </table>
+    
+    <table class="secondTable">
+        <tr>
+            <td colspan="1" rowspan="1" class="alignCentreMiddle">Br.</td>
+            <td colspan="1" rowspan="1" class="alignCentreMiddle">Opis &#40;što se dogada&#41;</td>
+            <td colspan="1" rowspan="1" class="alignCentreMiddle">Prostorija u zgradi</td>
+            <td colspan="1" rowspan="1" class="alignCentreMiddle">Očitovanje voditelja IS/TS</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1" class="alignCentreMiddle">{{rbr1}}</td>
+            <td colspan="1" rowspan="1" class ="paddingLeft">{{OpisProblema1}}</td>
+            <td colspan="1" rowspan="1" class="alignCentreMiddle">{{Prostorija1}}</td>
+            <td colspan="1" rowspan="1" class="alignRightPaddingRight">{{splitText OcitovanjeVod1}}</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1" class="alignCentreMiddle">{{rbr2}}</td>
+            <td colspan="1" rowspan="1" class ="paddingLeft">{{OpisProblema2}}</td>
+            <td colspan="1" rowspan="1" class="alignCentreMiddle">{{Prostorija2}}</td>
+            <td colspan="1" rowspan="1" class="alignRightPaddingRight">{{splitText OcitovanjeVod2}}</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1" class="alignCentreMiddle">{{rbr3}}</td>
+            <td colspan="1" rowspan="1" class ="paddingLeft">{{OpisProblema3}}</td>
+            <td colspan="1" rowspan="1" class="alignCentreMiddle">{{Prostorija3}}</td>
+            <td colspan="1" rowspan="1" class="alignRightPaddingRight">{{splitText OcitovanjeVod2}}</td>
+        </tr>
+    </table>
+
+
+    <table class="thirdTable">
+    {{#each Ovjerivaci}}
+            <tr>
+                <td colspan="1" rowspan="1" class ="paddingLeft">Datum</td>
+                <td colspan="1" rowspan="1" class ="paddingLeft">{{formatDate DatumOvjere}}</td>
+                <td colspan="1" rowspan="1" class ="paddingLeft">{{GrupaZaOvjeru}}</td>
+                <td colspan="1" rowspan="1" class ="paddingLeft">{{UserOvjerio}}</td>
+                <td colspan="1" rowspan="1" class ="paddingLeft">Potpis</td>
+                {{#if (checkOvjeraSudionikStatus PkOvjeraSudionikStatus)}} 
+                    <td colspan="1" rowspan="1" class="alignImgCentre"><img src="{{asset "/LamaZd2/images/check.png" "dataURI"}}" width="22" height="22" alt="Check" /></td>
+                {{else}}
+                    <td colspan="1" rowspan="1" class="alignImgCentre"><img src="{{asset "/LamaZd2/images/x.png" "dataURI"}}" width="22" height="22" alt="X" /></td>
+                {{/if}}
+            </tr>
+    {{/each}}
+    </table>
+
+
+    <div class="container">
+    <p class="fourthTablePara" class="boldText">
+        Dostaviti na uvid:
+    </p>
+    <table class="fourthTable">
+        {{#each Uvidi}}
+            <tr>
+                <td>{{GrupaZaUvid}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</div>
+
+</body>
+</html>

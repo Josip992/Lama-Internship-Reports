@@ -1,0 +1,179 @@
+<head>
+    <style>{{asset "/LamaZd6/assets/nastavno-opterecenje.css"}}</style>
+</head>
+<body>
+    <div class="upperRight fontSize8pt">15.03.2024.</div>
+
+    <div class="rightMargin">
+    <div class="container">
+    <div>
+       <img class="imageSize" src="{{asset "/LamaZd6/images/photo (1).png" "dataURI"}}"/>
+    </div>
+    <div class="marginLeft">
+        <h2 class="fontSize18pt">Nastavno opterećenje nastavnika suradnika po predmetu i studiju</h2>
+    </div>
+    </div>
+
+    {{#each List1}}
+    {{#if @first}}
+    <table class="firstTable">
+      <tr class="backgroundD3D3D3">
+        <th>Nastavnik suradnik</th>
+        <th>OIB</th>
+        <th>Status</th>
+        <th>Zvanje</th>
+      </tr>
+      <tr class="backgroundF2F2F2">
+        <td>{{NastavnikSuradnikNaziv}}</td>
+        <td>{{OIB}}</td>
+        <td>{{NazivNastavnikStatus}}</td>
+        <td>{{ZvanjeNaziv}}</td>
+      </tr>
+    </table>
+    {{/if}}
+    {{/each}}
+
+  {{#each (groupData List1 'SkolskaGodinaNaziv' 'PredmetNaziv' 'PredmetKratica' 'PlaniraniSatiPredavanja' 'PlaniraniSatiSeminari' 'PlaniraniSatiVjezbe' 'RealiziraniSatiPredavanja' 'RealiziraniSatiSeminari' 'RealiziraniSatiVjezbe' 'NormaPlaniraniSatiPredavanja' 'NormaPlaniraniSatiSeminari' 'NormaPlaniraniSatiVjezbe' 'NormaRealiziraniSatiPredavanja' 'NormaRealiziraniSatiSeminari' 'NormaRealiziraniSatiVjezbe')}}
+  <h3 class="fontSize15pt">Akademska godina <u>{{@key}}</u></h3>
+  <table class="firstTable">
+        <tr class="backgroundD3D3D3">
+            <th colspan="2">
+
+            </th>
+            <th colspan="5">
+                PLAN
+            </th>
+            <th colspan="5">
+                REALIZACIJA
+            </th>
+            <th>
+                RAZ
+            </th>
+        </tr>
+        <tr class="backgroundE0E0E0">
+            <th colspan="2">
+                Predmet
+            </th>
+            <th>
+                pred.
+            </th>
+            <th>
+                sem.
+            </th>
+            <th>
+                vjež.
+            </th>
+            <th>
+                sati u
+            </th>
+            <th>
+                norma uk
+            </th>
+            <th>
+                pred.
+            </th>
+            <th>
+                sem.
+            </th>
+            <th>
+                vjež.
+            </th>
+            <th>
+                sati u
+            </th>
+            <th>
+                norma uk
+            </th>
+            <th>
+                norma
+            </th>
+        </tr>
+        {{#each this}}
+        <tr class="loopedRow">
+            <td colspan="2">
+                 {{this.PredmetKratica}} - {{this.printBy}}</br>
+            </td>
+            <td>
+                {{this.PlaniraniSatiPredavanja}}
+            </td>
+            <td>
+                {{this.PlaniraniSatiSeminari}}
+            </td>
+            <td>
+                {{this.PlaniraniSatiVjezbe}}
+            </td>
+            <td>
+                {{add this.PlaniraniSatiPredavanja this.PlaniraniSatiSeminari this.PlaniraniSatiVjezbe}}
+            </td>
+            <td>
+                {{add this.NormaPlaniraniSatiPredavanja this.NormaPlaniraniSatiSeminari this.NormaPlaniraniSatiVjezbe}}
+            </td>
+            <td>
+                {{this.RealiziraniSatiPredavanja}}
+            </td>
+            <td>
+                {{this.RealiziraniSatiSeminari}}
+            </td>
+            <td>
+                {{this.RealiziraniSatiVjezbe}}
+            </td>
+            <td>
+                {{add this.RealiziraniSatiPredavanja this.RealiziraniSatiSeminari this.RealiziraniSatiVjezbe}}
+            </td>
+            <td>
+                {{add this.NormaRealiziraniSatiPredavanja this.NormaRealiziraniSatiSeminari this.NormaRealiziraniSatiVjezbe}}
+            </td>
+            <td>
+                {{subtract (add this.NormaPlaniraniSatiPredavanja this.NormaPlaniraniSatiSeminari this.NormaPlaniraniSatiVjezbe) (add this.NormaRealiziraniSatiPredavanja this.NormaRealiziraniSatiSeminari this.NormaRealiziraniSatiVjezbe)}}
+            </td>
+        </tr>
+        {{/each}}
+        <tr class="backgroundE8E8E8">
+            <td>
+                
+            </td>
+            <td class="alignRight underlineBold">
+                UKUPNO:
+            </td>
+            <td class="underlineBold">
+                {{mathFloor (sum this 'PlaniraniSatiPredavanja')}}
+            </td>
+            <td class="underlineBold">
+                {{mathFloor (sum this 'PlaniraniSatiSeminari')}}
+            </td>
+            <td class="underlineBold">
+                {{mathFloor (sum this 'PlaniraniSatiVjezbe')}}
+            </td class="underlineBold">
+            <td class="underlineBold">
+                {{mathFloor (sum this 'PlaniraniSatiPredavanja' 'PlaniraniSatiSeminari' 'PlaniraniSatiVjezbe')}}
+            </td>
+            <td class="underlineBold">
+                {{sum this 'NormaPlaniraniSatiPredavanja' 'NormaPlaniraniSatiSeminari' 'NormaPlaniraniSatiVjezbe'}}
+            </td>
+            <td class="underlineBold">
+                {{mathFloor (sum this 'RealiziraniSatiPredavanja')}}
+            </td>
+            <td class="underlineBold">
+                {{mathFloor (sum this 'RealiziraniSatiSeminari')}}
+            </td>
+            <td class="underlineBold">
+                {{mathFloor (sum this 'RealiziraniSatiVjezbe')}}
+            </td>
+            <td class="underlineBold">
+                {{mathFloor (sum this 'RealiziraniSatiPredavanja' 'RealiziraniSatiSeminari' 'RealiziraniSatiVjezbe')}}
+            </td>
+            <td class="underlineBold">
+                {{sum this 'NormaRealiziraniSatiPredavanja' 'NormaRealiziraniSatiSeminari' 'NormaRealiziraniSatiVjezbe'}}
+            </td>
+            <td class="underlineBold">
+                {{subtract (sum this 'NormaPlaniraniSatiPredavanja' 'NormaPlaniraniSatiSeminari' 'NormaPlaniraniSatiVjezbe') (sum this 'NormaRealiziraniSatiPredavanja' 'NormaRealiziraniSatiSeminari' 'NormaRealiziraniSatiVjezbe')}}
+            </td>
+        </tr>
+    </table>
+    {{/each}}
+    </div>
+
+
+
+
+</body>

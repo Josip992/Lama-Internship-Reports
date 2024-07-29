@@ -1,0 +1,160 @@
+<head>
+<style>{{asset "/LamaZd3/assets/urudzbeni-zapisnik.css"}}</style>
+</head>
+<body>
+    <p class="docTitle">
+        <strong>Urudžbeni zapisnik</strong>
+    </p>
+    <table>
+				<tr class="t1r1to6Dimensions">
+                    <td class="t1r1c1DimensionsAlign">
+                        <strong>Klasifikacijska oznaka</strong>
+                    </td>
+					<td class="t1r1c2DimensionsAlign">
+						<strong>Predmet</strong>
+					</td>
+					<td class="t1r1c3DimensionsAlign">
+						<strong>Urudžbeni broj</strong>
+					</td>
+					<td class="t1r1c4DimensionsAlign">
+						<strong>Datum primitka</strong>
+					</td>
+					<td class="t1r1c5DimensionsAlign">
+						<strong>Datum</br>nastanka</br>pismena</strong>
+					</td>
+					<td class="t1r1c6DimensionsAlign">
+						<strong>Ustrojstvena jedinica</strong>
+					</td>
+					<td class="t1r1c7DimensionsAlign"colspan="2">
+						<strong>Razvođenje</strong>
+					</td>
+				</tr>
+				
+				<tr class="t1r1to6Dimensions">
+					<td class="t1c1and2DimensionsAlign">
+						
+					</td>
+					<td class="t1c1and2DimensionsAlign">
+                        
+                    </td>
+					<td class="t1c3and2DimesionsAlign">
+                        
+					</td>
+					<td class="t1c4and3DimesnsionsAlign">
+                       
+					</td>
+					<td class="t1c5and4DimesnsionsAlign">
+                        
+					</td>
+					<td class="t1c6and5DimensionsAlign">
+                        
+					</td>
+					<td class="t1c7and8and9DimensionsAlign">
+                        <strong>Datum</strong>
+					</td>
+					<td class="t1c7and8and9DimensionsAlign">
+						<strong>Oznaka</strong>	
+					</td>
+				</tr>
+
+				<tr class="t1r1to6Dimensions">
+					<td class="t1c1and2DimensionsAlign">
+						1
+					</td>
+					<td class="t1c1and2DimensionsAlign">
+                        2
+                    </td>
+					<td class="t1c3and2DimesionsAlign">
+                        3
+					</td>
+					<td class="t1c4and3DimesnsionsAlign">
+                        4
+					</td>
+					<td class="t1c5and4DimesnsionsAlign">
+                        5
+					</td>
+					<td class="t1c6and5DimensionsAlign">
+                        6
+					</td>
+					<td class="t1c7and8and9DimensionsAlign">
+                        7
+					</td>
+					<td class="t1c7and8and9DimensionsAlign">
+						8	
+					</td>
+				</tr>
+
+                {{#each Opis}}
+                <tr class="t1r1to6Dimensions" style="vertical-align: top;">
+					<td class="t1c1and2DimensionsAlign">
+						{{KlasifikacijskaOznaka}}
+					</td>
+					<td class="t1c1and2DimensionsAlign">
+						{{Predmet}}
+                    </td>
+					<td class="t1c3and2DimesionsAlign">
+                        {{UrudzbeniBroj}}
+					</td>
+					<td class="t1c4and3DimesnsionsAlign">
+                        {{formatDate DatumPrimitka}}
+					</td>
+					<td class="t1c5and4DimesnsionsAlign">
+                        {{formatDate DatumNastanka}}
+					</td>
+					<td class="t1c6and5DimensionsAlign">
+                        {{NazivUstrojstvenaJedinica}}
+					</td>
+					<td class="t1c7and8and9DimensionsAlign">
+                        
+					</td>
+					<td class="t1c7and8and9DimensionsAlign">
+                        
+					</td>
+				</tr>
+                
+				<tr class="t1r1to6Dimensions">
+					<td rowspan="2" class="t1c1and2DimensionsAlign">
+							Prijenos
+					</td>
+					<td class="t1c1and2DimensionsAlign">
+					
+                    </td>
+					<td class="t1c3and2DimesionsAlign">
+					
+					</td>
+					<td class="t1c4and3DimesnsionsAlign">
+					
+					</td>
+					<td class="t1c5and4DimesnsionsAlign">
+					
+					</td>
+					<td class="t1c6and5DimensionsAlign">
+					
+					</td>
+					<td rowspan="2" class="t1c7and8and9DimensionsAlign">
+					
+					</td>
+					<td rowspan="2" class="t1c7and8and9DimensionsAlign">
+							
+					</td>
+				</tr>
+
+				<tr class="t1r1to6Dimensions">
+					<td class="t1c1and2DimensionsAlign">
+					
+                    </td>
+					<td class="t1c3and2DimesionsAlign">
+					
+					</td>
+					<td class="t1c4and3DimesnsionsAlign">
+					
+					</td>
+					<td class="t1c5and4DimesnsionsAlign">
+					
+					</td>
+					<td class="t1c6and5DimensionsAlign">
+					
+					</td>
+				</tr>
+                {{/each}}
+</body>

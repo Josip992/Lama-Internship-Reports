@@ -1,0 +1,97 @@
+<head>
+<style>
+    {{asset "/LamaZd8/assets/crs.css"}}
+</style>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<div class="center">
+    <img src="{{asset "/LamaZd8/images/crs_watermark.png" "dataURI"}}" />
+</div>
+
+
+{{component
+"/LamaZd8/components/firstPageHeader"
+}}
+
+<table class="tableStyle">
+    <tr>
+        <td class="borderTopBottomRight"><b>Vessel name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{2A}}</b></td>
+        <td class="borderTopBottomCenter"><b>CRS No.: {{2B}}</b></td>
+    </tr>
+    <tr>
+        <td class="borderBottomRight"><b>Vessel type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{3A}}</b></td>
+        <td class="borderBottomCenter"><b>ENI No.: {{3B}}</b></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="borderBottomLight"><b>Operator: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{4A}}</b></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="borderBottom"><b>Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{5A}}</b></td>
+    </tr>
+    <tr>
+        <td colspan="2">Inspection place and dates:</td>
+    </tr>
+    <tr>
+        <td class="borderBottom textAlignLeft">First: <b>{{6A}}, ({{formatDate 6D}})</b></td>
+        <td class="borderBottom textAlignRight">Final: <b>{{6C}}, (2023-11-02</b>)</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="borderBottom">
+            This is to certify that the undersigned Surveyor to this Society has carried out an acceptance test of the crane of above named inland
+            navigation vessel in accordance with Directive (EU).
+        </td>
+    </tr>
+</table>
+
+<table style="width: 76%; border-collapse: collapse; font-size:9pt; font-family: Helvetica, sans-serif;">
+    <tr>
+        <td style="border-bottom: 1px solid lightgray; padding: 2px;">The inspection has been carried out:</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: 1px solid lightgray; padding: 2px;">1. Before being put into service for the first time &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{toggleCheckbox 7A}}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: 1px solid lightgray; padding: 2px;">2. Before being put back into service after major modification or repair &nbsp;{{toggleCheckbox 8A}}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: 1px solid lightgray; padding: 2px;">3. Regularly, every ten years &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{toggleCheckbox 8A}}</td>
+    </tr>
+</table>
+
+<p style="font-size:9.5pt; font-family: Helvetica, sans-serif;">The safe working condition of the crane verified by visual and operating check and load test carried out.</p>
+
+
+
+<table style="width: 100%; border-collapse: collapse; position: absolute; bottom: 30px; font-size:9pt; font-family: Helvetica, sans-serif;">
+    <tr>
+        <td colspan="2" class="borderBottom borderTop" style="padding: 6px;">This statement is valid until: <b>(2023-11-09)</b></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="borderBottom" style="padding: 6px;">NOTE: Annual survey of the crane required in accordance with ES-TRIN.</td>
+    </tr>
+    <tr>
+        <td rowspan="3" style="padding: 6px;"><b>Place and date of issuing: Grad3, (2023-11-29)</b></td>
+        <td rowspan="1" class="columnSeparator" style="padding: 6px;">&nbsp;</td>
+    </tr>
+    <tr>
+        <td rowspan="1" style="border-bottom: 1px dotted lightgray; padding: 6px;" class="columnSeparator">
+            <span style="display: inline-block; transform: translateY(55px);"><b>{{12A}}</b></span>
+            <div class="image-container">
+                <img src="{{asset "/LamaZd8/images/crs_watermark.png" "dataURI"}}" style="width:90px; height:120px; margin-right: 30px;"/>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="1" class="columnSeparator" style="padding: 6px;">Name, signature and stamp of Surveyor</td>
+    </tr>
+</table>
+
+
+<div class="bottomImage">
+    <img src="{{asset '/LamaZd8/images/red_dash.jpg' 'dataURI'}}" class="redlineFirstPage">
+</div>
+
+</body>
+</html>

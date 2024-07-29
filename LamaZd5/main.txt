@@ -1,0 +1,117 @@
+<head>
+    <style>{{asset "/LamaZd5/assets/nastavno-opterecenje.css"}}</style>
+</head>
+<body>
+    <div class="container">
+    <div>
+        <img src="{{asset "/LamaZd5/images/photo.png" "dataURI"}}" />
+    </div>
+    <div class="marginLeft">
+        <h2 class="fontSize18pt">Nastavno opterećenje nastavnika suradnika po predmetu i studiju</h2>
+    </div>
+    </div>
+
+    <table class="firstTable">
+      <tr class="backgroundDarkGray">
+        <th>Nastavnik suradnik</th>
+        <th>OIB</th>
+        <th>Status</th>
+        <th>Zvanje</th>
+      </tr>
+      <tr>
+        <td>{{nastavnikData.NastavnikSuradnikNaziv}}</td>
+        <td>{{nastavnikData.OIB}}</td>
+        <td>{{nastavnikData.NazivNastavnikStatus}}</td>
+        <td>{{nastavnikData.ZvanjeNaziv}}</td>
+      </tr>
+    </table>
+
+    {{#each List1}}
+    <h3 class="fontSize15pt">Akademska godina <u>{{SkolskaGodinaNaziv}}</u></h3>
+    {{#each studijArray}}
+      <p class="fontSize12pt">{{StudijNaziv}}</p>
+      <table class="firstTable">
+        <tr class="backgroundDarkGray">
+            <th colspan="2">
+            </th>
+            <th colspan="5">
+                PLAN
+            </th>
+            <th colspan="5">
+                REALIZACIJA
+            </th>
+            <th>
+                RAZ
+            </th>
+        </tr>
+        <tr class="backgroundLightGray">
+            <th>ISVU</th>
+            <th>Predmet</th>
+            <th>pred.</th>
+            <th>sem.</th>
+            <th>vjež.</th>
+            <th>sati uk</th>
+            <th>norma uk</th>
+            <th>pred.</th>
+            <th>sem.</th>
+            <th>vjež.</th>
+            <th>sati uk</th>
+            <th>norma uk</th>
+            <th>norma</th>
+        </tr>
+          {{#each podaci}}
+            <tr>
+              <td class="acacacBorder">{{ISVUOznaka}}</td>
+              <td class="acacacBorder">{{PredmetKratica}} - {{PredmetNaziv}}</td>
+              <td class="acacacBorder">{{PlaniraniSatiPredavanja}}</td>
+              <td class="acacacBorder">{{PlaniraniSatiSeminari}}</td>
+              <td class="acacacBorder">{{PlaniraniSatiVjezbe}}</td>
+              <td class="acacacBorder">{{add PlaniraniSatiPredavanja PlaniraniSatiSeminari PlaniraniSatiVjezbe}}</td>
+              <td class="acacacBorder">{{add NormaPlaniraniSatiPredavanja NormaPlaniraniSatiSeminari NormaPlaniraniSatiVjezbe}}</td>
+              <td class="acacacBorder">{{RealiziraniSatiPredavanja}}</td>
+              <td class="acacacBorder">{{RealiziraniSatiSeminari}}</td>
+              <td class="acacacBorder">{{RealiziraniSatiVjezbe}}</td>
+              <td class="acacacBorder">{{add RealiziraniSatiPredavanja RealiziraniSatiSeminari RealiziraniSatiVjezbe}}</td>
+              <td class="acacacBorder">{{add NormaRealiziraniSatiPredavanja NormaRealiziraniSatiSeminari NormaRealiziraniSatiVjezbe}}</td>
+              <td class="acacacBorder">{{subtract (add NormaPlaniraniSatiPredavanja NormaPlaniraniSatiSeminari NormaPlaniraniSatiVjezbe) (add NormaRealiziraniSatiPredavanja NormaRealiziraniSatiSeminari NormaRealiziraniSatiVjezbe)}}</td>
+            </tr>
+          {{/each}}
+            <tr class="backgroundLighterGray">
+            <td style="border-color: #acacac"></td>
+            <td class="alignRight underlineBold acacacBorder ">UKUPNO:</td>
+            <td class="underlineBold acacacBorder">{{sum podaci 'PlaniraniSatiPredavanja'}}</td>
+            <td class="underlineBold acacacBorder">{{sum podaci 'PlaniraniSatiSeminari'}}</td>
+            <td class="underlineBold acacacBorder">{{sum podaci 'PlaniraniSatiVjezbe'}}</td>
+            <td class="underlineBold acacacBorder">{{sum podaci 'PlaniraniSatiPredavanja' 'PlaniraniSatiSeminari' 'PlaniraniSatiVjezbe'}}</td>
+            <td class="underlineBold acacacBorder">{{sum podaci 'NormaPlaniraniSatiPredavanja' 'NormaPlaniraniSatiSeminari' 'NormaPlaniraniSatiVjezbe'}}</td>
+            <td class="underlineBold acacacBorder">{{sum podaci 'RealiziraniSatiPredavanja'}}</td>
+            <td class="underlineBold acacacBorder">{{sum podaci 'RealiziraniSatiSeminari'}}</td>
+            <td class="underlineBold acacacBorder">{{sum podaci 'RealiziraniSatiVjezbe'}}</td>
+            <td class="underlineBold acacacBorder">{{sum podaci 'RealiziraniSatiPredavanja' 'RealiziraniSatiSeminari' 'RealiziraniSatiVjezbe'}}</td>
+            <td class="underlineBold acacacBorder">{{sum podaci 'NormaRealiziraniSatiPredavanja' 'NormaRealiziraniSatiSeminari' 'NormaRealiziraniSatiVjezbe'}}</td>
+            <td class="underlineBold acacacBorder">{{subtract (sum podaci 'NormaPlaniraniSatiPredavanja' 'NormaPlaniraniSatiSeminari' 'NormaPlaniraniSatiVjezbe') (sum podaci 'NormaRealiziraniSatiPredavanja' 'NormaRealiziraniSatiSeminari' 'NormaRealiziraniSatiVjezbe')}}</td>
+            </tr>
+      </table>
+    {{/each}}
+    {{/each}}
+    
+    
+    <table class="firstTable">
+    <tr>
+        <td class="t3c1"></td>
+        <td class="t3c2 alignRight underlineBold">UKUPNO:</td>
+        <td class="t3c3 underlineBold">{{grandSum List1 'studijArray' 'podaci' 'PlaniraniSatiPredavanja'}}</td>
+        <td class="t3c4 underlineBold">{{grandSum List1 'studijArray' 'podaci' 'PlaniraniSatiSeminari'}}</td>
+        <td class="t3c5 underlineBold">{{grandSum List1 'studijArray' 'podaci' 'PlaniraniSatiVjezbe'}}</td>
+        <td class="t3c6 underlineBold">{{grandSum List1 'studijArray' 'podaci' 'PlaniraniSatiPredavanja' 'PlaniraniSatiSeminari' 'PlaniraniSatiVjezbe'}}</td>
+        <td class="t3c7 underlineBold">{{grandSum List1 'studijArray' 'podaci' 'NormaPlaniraniSatiPredavanja' 'NormaPlaniraniSatiSeminari' 'NormaPlaniraniSatiVjezbe'}}</td>
+        <td class="t3c8 underlineBold">{{grandSum List1 'studijArray' 'podaci' 'RealiziraniSatiPredavanja'}}</td>
+        <td class="t3c9 underlineBold">{{grandSum List1 'studijArray' 'podaci' 'RealiziraniSatiSeminari'}}</td>
+        <td class="t3c10 underlineBold">{{grandSum List1 'studijArray' 'podaci' 'RealiziraniSatiVjezbe'}}</td>
+        <td class="t3c11 underlineBold">{{grandSum List1 'studijArray' 'podaci' 'RealiziraniSatiPredavanja' 'RealiziraniSatiSeminari' 'RealiziraniSatiVjezbe'}}</td>
+        <td class="t3c12 underlineBold">{{grandSum List1 'studijArray' 'podaci' 'NormaRealiziraniSatiPredavanja' 'NormaRealiziraniSatiSeminari' 'NormaRealiziraniSatiVjezbe'}}</td>
+        <td class="t3c13 underlineBold">{{subtract (grandSum List1 'studijArray' 'podaci' 'NormaPlaniraniSatiPredavanja' 'NormaPlaniraniSatiSeminari' 'NormaPlaniraniSatiVjezbe') (grandSum List1 'studijArray' 'podaci' 'NormaRealiziraniSatiPredavanja' 'NormaRealiziraniSatiSeminari' 'NormaRealiziraniSatiVjezbe')}}</td>
+    </tr>
+    </table>
+
+</body>

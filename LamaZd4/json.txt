@@ -1,0 +1,174 @@
+{
+  "_id": "6421900f1c72e63af8be88b7",
+  "PkePredlozakStatus": 2,
+  "PredlozakStatus": "Koristi se",
+  "PkePredlozakTip": 38,
+  "PredlozakTip": "Zahtjev za otkup informatičko-komunikacijske opreme (ICT oprema) u vlasništvu ekonomskog fakulteta u splitu",
+  "PredlozakOznakaProcesa": "13",
+  "PredlozakOznakaObrasca": "13",
+  "PredlozakOznaka": "13/13",
+  "PredlozakIzdanje": "13",
+  "PredlozakNaziv": "test",
+  "DatumOdobrenja": "2023-03-01",
+  "Odobrio": "asdf",
+  "BrStranica": "1",
+  "ProtokoliraSeDaNe": true,
+  "DatumUnosa": "2023-03-27",
+  "PkUseraUnos": 1,
+  "UserUnos": "lama admin",
+  "DatumZadnjePromjene": "2023-03-27",
+  "PkUseraPromjena": 1,
+  "UserPromjena": "lama admin",
+  "Ovjerivaci": [
+    {
+      "redniBroj": 1,
+      "PkGrupaZaOvjeru": 28,
+      "PkUseraOvjerio": 52,
+      "UserOvjerio": "Vinko Vinkić",
+      "GrupaZaOvjeru": "Dekan",
+      "DatumOvjere": null,
+      "Napomena": null,
+      "NazivOvjeraSudionikStatus": "Za ovjeru",
+      "PkOvjeraSudionikStatus": 1
+    },
+    {
+      "redniBroj": 2,
+      "PkGrupaZaOvjeru": 23,
+      "PkUseraOvjerio": 29,
+      "UserOvjerio": "Branka Brankić",
+      "GrupaZaOvjeru": "Nadležna prodekanica",
+      "DatumOvjere": "2023-03-27",
+      "Napomena": "asdf",
+      "NazivOvjeraSudionikStatus": "Odbijen",
+      "PkOvjeraSudionikStatus": 3
+    },
+    {
+      "redniBroj": 3,
+      "PkGrupaZaOvjeru": 34,
+      "PkUseraOvjerio": 46,
+      "UserOvjerio": "Ante Antić",
+      "GrupaZaOvjeru": "Ovlaštenik/ca nabave",
+      "DatumOvjere": null,
+      "Napomena": null,
+      "NazivOvjeraSudionikStatus": "Za ovjeru",
+      "PkOvjeraSudionikStatus": 1
+    },
+    {
+      "redniBroj": 4,
+      "PkGrupaZaOvjeru": 31,
+      "PkUseraOvjerio": 51,
+      "UserOvjerio": "Danijela Danić",
+      "GrupaZaOvjeru": "CMSPP",
+      "DatumOvjere": null,
+      "Napomena": null,
+      "NazivOvjeraSudionikStatus": "Za ovjeru",
+      "PkOvjeraSudionikStatus": 1
+    },
+    {
+      "redniBroj": 5,
+      "PkGrupaZaOvjeru": 21,
+      "PkUseraOvjerio": 42,
+      "UserOvjerio": "Smiljana Smiljić",
+      "GrupaZaOvjeru": "Prodekanica za nastavu",
+      "DatumOvjere": null,
+      "Napomena": null,
+      "NazivOvjeraSudionikStatus": "Za ovjeru",
+      "PkOvjeraSudionikStatus": 1
+    }
+  ],
+  "Uvidi": [
+    {
+      "redniBroj": 1,
+      "PkGrupaZaUvid": 19,
+      "GrupaZaUvid": "Podnositelj/ica zahtjeva"
+    }
+  ],
+  "EditabilnaPoljaUprocesuOvjere": [
+    {
+      "NazivPolja": "OznakaOpreme",
+      "PkGrupaZaOvjeru": 23,
+      "NazivGrupaZaOvjeru": "Nadležna prodekanica",
+      "Tekst": null
+    },
+    {
+      "NazivPolja": "Vrijednosti",
+      "PkGrupaZaOvjeru": 28,
+      "NazivGrupaZaOvjeru": "Dekan",
+      "Tekst": null
+    }
+  ],
+  "DocVersion": 24,
+  "DatumDokumenta": "2023-03-27",
+  "NazivOznakaInfOpreme": null,
+  "Proizvodac": null,
+  "LokacijaOpreme": null,
+  "Obrazlozenje": null,
+  "OznakaOpreme": null,
+  "Vrijednosti": null,
+  "PkePredlozak": "64218fcf1c72e63af8be88b",
+  "PkOvjeraStatus": 4,
+  "NazivOvjeraStatus": "Odbijen",
+  "ProcesOvjereDaNe": true,
+  "DokumentID": "13/13/23/0001",
+  "DatumOvjere": "2023-03-27",
+  "DatumPokretanjaOvjere": "2023-03-27",
+  "PkUseraOvjeruPokrenuo": 1,
+  "UserOvjeruPokrenuo": "lama admin",
+  "RacunalaOprema": [
+    {
+      "Oznaka": "z8gz",
+      "NabavnaCijenaEur": "200",
+      "OtkupnaCijenaEurPDV": "187.5"
+    },
+    {
+      "Oznaka": "asdasd",
+      "NabavnaCijenaEur": "100",
+      "OtkupnaCijenaEurPDV": "93.75"
+    },
+    {
+      "Oznaka": "43341134",
+      "NabavnaCijenaEur": "300",
+      "OtkupnaCijenaEurPDV": "281.25"
+    },
+    {
+      "Oznaka": "thhthteh",
+      "NabavnaCijenaEur": "400",
+      "OtkupnaCijenaEurPDV": "375"
+    },
+    {
+      "Oznaka": "aawdawada",
+      "NabavnaCijenaEur": "500",
+      "OtkupnaCijenaEurPDV": "468.75"
+    }
+  ],
+  "MobiteliOprema": [
+    {
+      "Oznaka": "",
+      "TrzisnaCijenaEur": "",
+      "OtkupnaCijenaEurPDV": ""
+    },
+    {
+      "Oznaka": "",
+      "TrzisnaCijenaEur": "",
+      "OtkupnaCijenaEurPDV": ""
+    },
+    {
+      "Oznaka": "",
+      "TrzisnaCijenaEur": "",
+      "OtkupnaCijenaEurPDV": ""
+    },
+    {
+      "Oznaka": "",
+      "TrzisnaCijenaEur": "",
+      "OtkupnaCijenaEurPDV": ""
+    },
+    {
+      "Oznaka": "",
+      "TrzisnaCijenaEur": "",
+      "OtkupnaCijenaEurPDV": ""
+    }
+  ],
+  "PredlozakTitle": "SUSTAV KVALITETE",
+  "Mobiteli": false,
+  "Racunala": true
+}

@@ -1,0 +1,305 @@
+<head>
+<style>
+    {{asset "/LamaZd7/assets/crs.css"}}
+</style>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<div class="center">
+    <img src="{{asset "/LamaZd7/images/crs_watermark.png" "dataURI"}}" />
+</div>
+
+
+{{component
+"/LamaZd7/components/firstPageHeader"
+}}
+
+<div class="container">
+    <div class="section">
+        <div class="sectionContent">
+            <p class="textBold">
+                Vessel name<br>
+                <span class="textNormal textItalic">Ime broda</span>
+            </p>
+            <p class="textColor014087 font13pt textBold lessHeightParagraph">
+                {{2A}}
+            </p>
+            <p class="textBold">
+                Flag<br>
+                <span class="textNormal textItalic">Zastava</span>
+            </p>
+            <p class="textColor014087 lessHeightParagraph textBold">
+                {{3A}}
+            </p>
+            <p class="textBold">
+                Shipyard<br>
+                <span class="textNormal textItalic">Brodogradilište</span>
+            </p>
+            <p class="textColor014087 textBold">
+                {{4A}}
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="sectionContent">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="sectionContent">
+            <p class="textBold">
+                CRS ID<br>
+                <span class="textNormal textItalic">HRB br.</span>
+            </p>
+            <p class="textColor014087 font13pt textBold lessHeightParagraph">
+                {{2B}}
+            </p>
+            <p class="textBold">
+                Port of registry<br>
+                <span class="textNormal textItalic">Luka upisa</span>
+            </p>
+            <p class="textColor014087 lessHeightParagraph textBold">
+                {{3B}}
+            </p>
+            <p class="textBold">
+                Place of build<br>
+                <span class="textNormal textItalic">Mjesto gradnje</span>
+            </p>
+            <p class="textColor014087 textBold">
+                {{4B}}
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="sectionContent">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="sectionContent">
+            <p class="textBold">
+                Owner<br>
+                <span class="textNormal textItalic">Vlasnik</span>
+            </p>
+            <p class="textColor014087 lessHeightParagraph textBold">
+            {{3C}}
+            </p>
+            <p class="textBold">
+                Date of build<br>
+                <span class="textNormal textItalic">Datum gradnje</span>
+            </p>
+            <p class="textColor014087 textBold">
+                {{4C}}
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="topMargin">
+    <strong>THIS IS TO CERTIFY</strong>
+</div>
+<div class="bottomMargin">
+    <em>POSVJEDOCUJE SE</em>
+</div>
+<div class="bottomMarginHalf">
+    <strong>that the aforementioned vessel has been surveyed by CRS for class renewal in accordance with the Rules for the Classification of Inland Navigation Vessels and that the vessel meets the applicable requirements. On that basis, the following class notations have been maintained:</strong>
+</div>
+<div class="bottomMargin">
+    <em>da je HRB pregledao gore navedeni brod u svrhu dodjele klase u skladu s Pravilima za klasifikaciju brodova unutarnje plovidbe te da udovoljava primjenjivim zahtjevima. Temeljem toga zadržavaju se sljedece oznake klase:</em>
+</div>
+
+            
+	<div class="section flexContent">
+    <div class="sectionContent">
+        <b>HULL</b><span class="decoration1">{{5A}}</span><br>
+        <i>TRUP</i><span class="decoration2">{{5B}}</span>
+    </div>
+    <div class="font11pt">
+        <b>{{5C}} {{5D}} {{5E}}<br>
+        {{6A}} {{6B}} {{6C}} {{6D}} {{6E}} {{6F}} {{6G}} {{6H}} {{6I}} {{6J}} {{6K}}<br>
+        {{6L}} {{6M}} {{6N}} {{6O}} {{6P}} {{6R}} {{6S}} {{6T}} {{6U}} {{6V}}<br>
+        {{6W}} {{6X}}<br>
+        {{7A}} {{7B}} {{7C}}
+        {{7D}} {{7E}} {{7F}}<br>
+        {{8A}} {{8B}}<br>
+        {{9A}} {{9B}} {{9C}}<br>
+        {{10A}} {{10B}} {{10C}}</b>
+    </div>
+    </div>
+
+    <div class="section flexContent">
+    <div class="sectionContent" style="margin-top:10px; margin-right:13px">
+        <b>MACHINERY</b><span class="decoration3">{{5A}}</span><br>
+        <i>STROJNI</i><br>UREÐAJ
+    </div>
+    <div class="marginTop10px">
+        <b>{{11C}}</b>
+    </div>
+    </div>
+
+    
+</div>
+
+	<p class="validityPara1">
+				<strong><span>This certificate is valid until receipt of final certificate to be issued by Head Office of Croatian Register of Shipping, and is </span></strong><em><span style="font-family:Arial; "><br>Ova svjedodžba vrijedi do dobivanja konacne svjedodžbe koju ce izdati Glavni ured Hrvatskog registra brodova, i ima</span></em>
+	</p>
+    
+	<table class="validityTable">
+    <tr class="validityR1">
+        <td class="validityR1C1">
+            <p class="validityR1C1Para">
+                <strong>valid from:</strong>
+            </p>
+        </td>
+        <td class="validityR1C2">
+            <p class="validityR1C2Para">
+               <span>{{formatDate 12A}}</span>
+            </p>
+        </td>
+        <td class="validityR1C3">
+            <p class="validityR1C3Para">
+                <strong>until: </strong>{{formatDate 12B}}
+            </p>
+        </td>
+    </tr>
+    <tr class="validityR2">
+        <td class="validityR2C1">
+            <p class="validityR2C1Para">
+                <em>valjanost od</em>
+            </p>
+        </td>
+        <td class="validityR2C2">
+            <p class="validityR2C2Para">
+                 
+            </p>
+        </td>
+        <td class="validityR2C3">
+            <p class="validityR2C3Para">
+                <em>do</em>
+            </p>
+        </td>
+    </tr>
+    <tr class="validityR3">
+        <td class="validityR3C1">
+            <p class="validityR3C1Para">
+                <strong><span>Issued at:</span></strong>
+            </p>
+        </td>
+        <td class="validityR3C2">
+            <p class="validityR3C2Para">
+                <span>{{13A}}</span>
+            </p>
+        </td>
+        <td class="validityR3C3">
+            <p class="validityR3C3Para">
+                <strong>date: </strong>{{formatDate 13B}}
+            </p>
+        </td>
+        <td class="validityR3C4">
+            <p class="validityR3C4Para">
+                <strong>(Seal)</strong>
+            </p>
+        </td>
+        <td class="validityR3C5">
+            <p class="validityR3C5Para">
+                <span>{{13C}}</span>
+            </p>
+        </td>
+        <td class="validityR3C6">
+            <p>
+                {{component
+                "/LamaZd7/components/stampWatermark"
+                }}
+            </p>
+        </td>
+    </tr>
+    <tr class="validityR4">
+        <td class="validityR4C1">
+            <p class="validityR4C1Para">
+                <em>Izdana u</em>
+            </p>
+        </td>
+        <td class="validityR4C2">
+            <p class="validityR4C2Para">
+                 
+            </p>
+        </td>
+        <td class="validityR4C3">
+            <p class="validityR4C3Para">
+                <em><span>dana</span></em>
+            </p>
+        </td>
+        <td class="validityR4C4">
+            <p class="validityR4C4Para">
+                M.P.
+            </p>
+        </td>
+		<td>
+			<p class="validityR4C5Para">
+				<b>Croatian Register of Shipping</b>
+            </p>
+		</td>
+    </tr>
+	 <tr class="validityR5">
+        <td class="validityR5C1">
+            <p class="validityR5C1Para">
+                &nbsp;
+            </p>
+        </td>
+        <td class="validityR5C2">
+            <p class="validityR5C2Para">
+                 
+            </p>
+        </td>
+        <td class="validityR5C3">
+            <p class="validityR5C3Para">
+                &nbsp;
+            </p>
+        </td>
+        <td class="validityR5C4">
+            <p class="validityR5C4Para">
+                &nbsp;
+            </p>
+        </td>
+		<td>
+			<p class="validityR5C5Para">
+				<i>Hrvatski registar brodova</i>
+            </p>
+		</td>
+    </tr>
+</table>
+
+<img src="{{asset '/LamaZd7/images/red_dash.jpg' 'dataURI'}}" class="redlineFirstPage">
+
+<p class="firstPageSecondLastPara">
+    <strong><span>Validity of this Certificate is subject to any recommendations or conditions of class being completed by the due date as specified overleaf and including when applicable in case of transfer of class any recommendations or conditions of class previously issued against the ship that have to be completed by the due date as specified by the previous (loosing) society.</span></strong>
+</p>
+<p class="firstPageLastPara">
+    <em><span>Valjanost ove svjedodžbe je uvjetovana otklanjanjem u zadanom roku primjedbi i uvjeta klase kako je navedeno na poledini, ukljucujuci gdje je primjenjivo u slucaju transfera klase i sve primjedbe i uvjete klase prethodno izdate brodu koje moraju biti otklonjene u postavljenim rokovima utvrdenim od bivšeg klasifikacijskog društva.</span></em>
+</p>
+
+		<p class="fontSize7halfPT">
+            <b>The latest published Rules of CRS and relevant liabilities apply to this Certificate.</b><br>
+            Na ovu svjedodžbu primjenjiva su posljednja izdana Pravila HRB-a kao i odgovarajuce odgovornosti.
+        </p>
+
+<div class="fill">
+</div>
+
+{{component
+"/LamaZd7/components/thirdPageHeader"
+}}
+
+<div class="topMargin">
+<b>Recommendations / conditions of class are listed below:</b> {{14B}}
+<br>
+Primjedbe / uvjeti klase su u priloženom izvještaju br.: {{15B}}
+<br>
+{{16A}}
+</div>
+
+</body>
+</html>

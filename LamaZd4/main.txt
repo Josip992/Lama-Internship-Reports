@@ -1,0 +1,167 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>{{asset "/LamaZd4/assets/result-obrazac.css"}}</style>
+</head>
+<body>
+    <div class="printInfoIDPos">
+        Broj dokumenta: {{DokumentID}}
+    </div>
+    <div class="printInfoDatePos">
+        Datum dokuenta: {{formatDate DatumDokumenta}}
+    </div>
+    <table class="firstTable">
+        <tr>
+            <td colspan="1" rowspan="5" style="width: 70.5pt; height: 93px;  text-align: center; vertical-align: middle;">
+                <img src="{{asset "/LamaZd4/images/efst.jpg" "dataURI"}}" style="width: 70px; height: 70px;">
+            </td>
+            <td colspan="1" rowspan="1" class="centreMiddleBold">{{PredlozakTitle}}</td>
+            <td colspan="1" rowspan="1" class="thirdColumnFtDimensionsPadding paddingLeft">Oznaka</td>
+            <td colspan="1" rowspan="1" class="fourthColumnFirstRowDimensionsPadding">{{PredlozakOznaka}}</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1" class="centreMiddleBold">DOKUMENTIRANI OBRASCI</td>
+            <td colspan="1" rowspan="1" class="thirdColumnFtDimensionsPadding paddingLeft">Izdanje</td>
+            <td colspan="1" rowspan="1" class="frFtDimensionsPading">{{PredlozakIzdanje}}</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="3" class="secondColumnThirdRowDimensionsCentre">{{PredlozakNaziv}}</td>
+            <td colspan="1" rowspan="1" class="thirdColumnFtDimensionsPadding paddingLeft">Datum</td>
+            <td colspan="1" rowspan="1" class="frFtDimensionsPading">{{formatDate DatumOdobrenja}}</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1" class="thirdColumnFtDimensionsPadding paddingLeft">Odobrio</td>
+            <td colspan="1" rowspan="1" class="frFtDimensionsPading">{{Odobrio}}</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1" class="thirdColumnFtDimensionsPadding paddingLeft">Br. Str.</td>
+            <td colspan="1" rowspan="1" class="frFtDimensionsPading">{{BrStranica}}</td>
+        </tr>
+    </table>
+
+    <div class="center">
+    <div class="checkbox">
+        {{#if Racunala}}
+        <p>? racunala </p>
+        {{else}}
+        <p>? racunala </p>
+        {{/if}}
+    </div>
+    <div class="checkbox">
+        {{#if Mobiteli}}
+        <p>mobiteli ?</p>
+        {{else}}
+        <p>mobiteli ?</p>
+        {{/if}}
+    </div>
+    </div>
+
+    
+
+    <div class="osobnaRacunalaDiv">
+    <div class="grayBackground">
+    <p class="paddingLeftTopBot fontSize12pt">A&#41 <strong>OSOBNA RACUNALA</strong></p>
+    <p class="paddingLeft fontSize12pt">Ako je knjigovodstvena vrijednost 0 eura, otkupna vrijednost iznosi 50 eura.</p>
+    <p class="paddingLeft fontSize12pt">Ako je knjigovodstvena vrijednost veca od 0 eura, najmanja otkupna vrijednost je 50 eura ili više kako slijedi:</p>
+    <ul>
+        <li>Od knjigovodstvene aktivacije opreme je proteklo više od 1 godine, a manje od 2 godine otkupna vrijednost iznosi 0,75 x nabavna vrijednost.</li>
+        <li>Od knjigovodstvene aktivacije opreme je proteklo više od 2 godine, a manje od 3 godine otkupna vrijednost iznosi 0,5 x nabavna vrijednost.</li>
+        <li>Od knjigovodstvene aktivacije opreme je proteklo više od 3 godine, a manje od 4 godine otkupna vrijednost iznosi 0,25 x nabavna vrijednost.</li>
+    </ul>
+    </div>
+
+    <table class="osobnaRacunala">
+        <tr>
+            <th>Oznaka opreme</th>
+            <th>Nabavna vrijednost u eurima</th>
+            <th>Otkupna vrijednost u eurima</br>(ukljucuje PDV)</th>
+        </tr>
+        {{#each RacunalaOprema}}
+        <tr>
+            <td>{{Oznaka}}</td>
+            <td>{{NabavnaCijenaEur}}</td>
+            <td>{{OtkupnaCijenaEurPDV}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    </div>
+
+    <div class="osobnaRacunalaDiv">
+    <div class="grayBackground">
+    <p class="paddingLeftTopBot fontSize12pt">B&#41 <strong>MOBITELI</strong></p>
+    <p class="paddingLeft fontSize12pt">Ako je knjigovodstvena vrijednost 0 eura, otkupna vrijednost iznosi 20 eura.</p>
+    <p class="paddingLeft fontSize12pt">Ako je knjigovodstvena vrijednost veca od 0 eura, najmanja otkupna vrijednost je 20 eura ili višekako slijedi:</p>
+    <ul>
+        <li>od knjigovodstvene aktivacije opreme je proteklo više od 1 godine, a manje od 2 godine otkupna vrijednost iznosi 0,5 x nabavna vrijednost</li>
+    </ul>
+    </div>
+
+    <table class="mobiteliDimensions">
+        <tr>
+            <th>Oznaka opreme</th>
+            <th>Tržišna vrijednost u eurima</th>
+            <th>Otkupna vrijednost u eurima</br>(ukljucuje PDV)</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    </div>
+
+
+    <table class="thirdTable">
+    {{#each Ovjerivaci}}
+            <tr>
+                <td colspan="1" rowspan="1" class ="paddingLeft">Datum</td>
+                <td colspan="1" rowspan="1" class ="paddingLeft">{{#if DatumOvjere}}
+                                                                    {{formatDate DatumOvjere}}
+                                                                {{/if}}</td>
+                <td colspan="1" rowspan="1" class ="paddingLeft">{{GrupaZaOvjeru}}</td>
+                <td colspan="1" rowspan="1" class ="paddingLeft">{{UserOvjerio}}</td>
+                <td colspan="1" rowspan="1" class ="paddingLeft">Potpis</td>
+                {{#if (checkOvjeraSudionikStatus NazivOvjeraSudionikStatus)}} 
+                    <td></td>
+                {{else}}
+                    <td colspan="1" rowspan="1" class="alignImgCentre"><img src="{{asset "/LamaZd4/images/x.png" "dataURI"}}" width="22" height="22" alt="X" /></td>
+                {{/if}}
+            </tr>
+    {{/each}}
+    </table>
+
+    <div class="container">
+    <p class="fourthTablePara" class="boldText">
+        Dostaviti na uvid:
+    </p>
+    <table class="fourthTable">
+        {{#each Uvidi}}
+            <tr>
+                <td>{{GrupaZaUvid}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</div>
+
+</body>
+</html>

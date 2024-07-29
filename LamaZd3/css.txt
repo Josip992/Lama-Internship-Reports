@@ -1,0 +1,123 @@
+body { 
+    font-family:'Times New Roman';
+}
+
+table {
+    margin: 20pt;
+    border-collapse:collapse;
+}
+
+.docTitle{
+    text-align:center; 
+    font-size:15.5pt; 
+    margin-top: 20pt;
+}
+
+.t1r1c1DimensionsAlign{
+    width:99pt;
+    border-top:0.5pt solid #000000; 
+    border-right:0.5pt solid #000000; 
+    border-left:0.5pt solid #000000; 
+    vertical-align:top; 
+    text-align:center;
+}
+
+.t1r1c2DimensionsAlign{
+    width:97.5pt; 
+    border-top:0.5pt solid #000000; 
+    border-right:0.5pt solid #000000; 
+    vertical-align:top; 
+    text-align:center;
+}
+
+.t1r1c3DimensionsAlign{
+    width:117.5pt; 
+    border-top:0.5pt solid #000000; 
+    border-right:0.5pt solid #000000; 
+    vertical-align:top; 
+    text-align:center;
+}
+
+.t1r1c4DimensionsAlign{
+    width:101.5pt; 
+    border-top:0.5pt solid #000000; 
+    border-right:0.5pt solid #000000; 
+    vertical-align:top; 
+    text-align:center;
+}
+
+.t1r1c5DimensionsAlign{
+    width:78.5pt; 
+    border-top:0.5pt solid #000000; 
+    border-right:0.5pt solid #000000; 
+    vertical-align:top; 
+    text-align:center;
+}
+
+.t1r1c6DimensionsAlign{
+    width:132.5pt; 
+    border-top:0.5pt solid #000000; 
+    border-right:0.5pt solid #000000; 
+    vertical-align:top; 
+    text-align:center;
+}
+
+.t1r1c7DimensionsAlign{
+    width:156.5pt; 
+    border-top:0.5pt solid #000000; 
+    border-right:0.5pt solid #000000; 
+    vertical-align:top; 
+    text-align:center;
+}
+
+.t1c1and2DimensionsAlign{
+    width:99pt;
+    border-right:0.5pt solid #000000; 
+    border-left:0.5pt solid #000000; 
+    text-align:center;
+}
+
+.t1c3and2DimesionsAlign{
+    width:97.5pt;
+    border-right:0.5pt solid #000000;
+    border-bottom:0.5pt solid #000000; 
+    text-align:center;
+    vertical-align: top;
+}
+
+.t1c4and3DimesnsionsAlign{
+    width:117.5pt; 
+    border-right:0.5pt solid #000000; 
+    border-bottom:0.5pt solid #000000; 
+    text-align:center;
+    vertical-align: top;
+}
+
+.t1c5and4DimesnsionsAlign{
+    width:101.5pt; 
+    border-right:0.5pt solid #000000; 
+    border-bottom:0.5pt solid #000000; 
+    text-align:center;
+    vertical-align: top;
+}
+
+.t1c6and5DimensionsAlign{
+    width:147pt; 
+    border-right:0.5pt solid #000000; 
+    border-bottom:0.5pt solid #000000; 
+    text-align:center;
+    vertical-align: top;
+}
+
+.t1c7and8and9DimensionsAlign{
+    width:73.5pt; 
+    border-right:0.5pt solid #000000; 
+    border-bottom:0.5pt solid #000000; 
+    text-align:center;
+}
+
+.t1r1to6Dimensions{
+    height:8.25pt; 
+    border-bottom:0.5pt solid #000000;
+    font-size: 8pt;
+}

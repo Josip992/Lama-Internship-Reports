@@ -1,0 +1,176 @@
+template (<html lang="en-US">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+        <style>
+			body { line-height:108%; font-family:Calibri; font-size:11pt }
+			p { margin:0pt 0pt 8pt }
+			span.Hyperlink { text-decoration:underline; color:#0563c1 }
+		</style>
+	</head>
+	<body>
+        <div style="margin-left: 80px; text-align: center; margin-bottom:8pt; margin-top:100px;">
+			<table style="margin-left:45.5pt; margin-bottom:0pt; border-collapse:collapse">
+				<tr style="height:32.25pt">
+					<td colspan="2" style="width:87.45pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; line-height:normal; font-size:10pt">
+                            <img src="data:image/jpeg;base64,{{Slika}}" width="114" height="76" alt="Swirl" /><strong>                                      </strong>
+						</p>
+					</td>
+					<td colspan="4" style="width:269.1pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; text-align:center; line-height:normal">
+							<strong>&#xa0;</strong>
+						</p>
+						<p style="margin-bottom:0pt; text-align:center; line-height:normal">
+							<strong>&#xa0;</strong>
+						</p>
+						<p style="margin-bottom:5pt; text-align:center; line-height:115%">
+							<strong>{{PredlozakNaziv}}</strong>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="width:87.45pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; line-height:115%; font-size:10pt">
+							{{PredlozakTip}}
+						</p>
+					</td>
+					<td style="width:97.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; text-align:center; line-height:115%; font-size:10pt">
+							{{PredlozakStatus}}
+						</p>
+					</td>
+					<td style="width:67.15pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; text-align:center; line-height:115%; font-size:10pt">
+							{{PredlozakOznaka}}
+						</p>
+					</td>
+					<td colspan="2" style="width:83.15pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; text-align:right; line-height:115%; font-size:10pt">
+							{{PredlozakIzdanje}}
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="width:87.45pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; line-height:115%; font-size:10pt">
+							Odobrio: {{Odobrio}}
+						</p>
+                        </br>
+					</td>
+					<td style="width:97.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; line-height:115%; font-size:10pt">
+                            Datum unosa:
+                        </p>
+                        <p style="margin-top:5pt; margin-bottom:0pt; line-height:115%; font-size:10pt">
+                            {{formatDate DatumUnosa}}
+                        </p>
+					</td>
+					<td style="width:67.15pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; line-height:115%; font-size:10pt">
+							RBR prijave: {{RedniBrojPrijave}}
+						</p>
+					</td>
+					<td colspan="2" style="width:83.15pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; line-height:115%; font-size:10pt">
+							Vrijednost: {{Vrijednost}}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:36.75pt">
+					<td colspan="6" style="width:367.35pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; text-align:center; line-height:115%; font-size:10pt">
+							<strong>Obrazloženje</strong>
+						</p>
+						<p style="margin-bottom:0pt; line-height:115%; font-size:10pt">
+							{{Obrazlozenje}}
+						</p>
+					</td>
+				</tr>
+
+                {{#each Ovjerivaci}}
+				<tr style="height:34.5pt">
+					<td style="width:58.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; line-height:115%; font-size:10pt">
+							&#xa0;
+						</p>
+						<p style="margin-bottom:0pt; line-height:115%; font-size:10pt">
+							{{formatDate DatumOvjere}}
+						</p>
+					</td>
+					<td colspan="2" style="width:126.45pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; line-height:115%; font-size:10pt">
+							&#xa0;
+						</p>
+						<p style="margin-bottom:0pt; line-height:115%; font-size:10pt">
+							{{UserOvjerio}}
+						</p>
+					</td>
+					<td colspan="2" style="width:73.2pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; line-height:115%; font-size:10pt">
+							&#xa0;
+						</p>
+						<p style="margin-bottom:0pt; text-align:center; line-height:115%; font-size:10pt">
+							{{NazivOvjeraSudionikStatus}}
+						</p>
+					</td>
+					<td style="width:77.1pt; border:0.75pt solid #000000; padding-right:5.03pt; padding-left:5.03pt; vertical-align:top">
+						<p style="margin-bottom:0pt; text-align:center; line-height:115%; font-size:10pt">
+                            {{#if (checkString NazivOvjeraSudionikStatus)}}                    
+                                 <img src="{{asset "/LamaZd1/Materijali/dossier.png" "dataURI"}}" width="42" height="42" alt="Dossier" />
+                            {{else}}
+                                <img src="{{asset "/LamaZd1/Materijali/paper.png" "dataURI"}}" width="44" height="44" alt="Paper" />
+                            {{/if}}
+						</p>
+					</td>
+				</tr>
+                {{/each}}
+
+				<tr style="height:0pt">
+					<td style="width:69pt">
+					</td>
+					<td style="width:29.25pt">
+					</td>
+					<td style="width:108pt">
+					</td>
+					<td style="width:77.95pt">
+					</td>
+					<td style="width:6.05pt">
+					</td>
+					<td style="width:87.9pt">
+					</td>
+				</tr>
+			</table>
+        </div>
+        <div style="margin-left: 80px; margin-bottom:8pt; margin-top:110px;">
+			
+			<p style="line-height:108%; font-size:10pt">
+				Tablice css:
+			</p>
+			<p>
+				<a href="https://www.w3schools.com/html/html_tables.asp" style="text-decoration:none"><span class="Hyperlink" style="line-height:108%; font-size:10pt">https://www.w3schools.com/html/html_tables.asp</span></a>
+			</p>
+			<p style="line-height:108%; font-size:10pt">
+				Gridovi css:
+			</p>
+			<p style="line-height:108%; font-size:10pt">
+				https://www.w3schools.com/css/css_grid.asp
+			</p>
+</body>
+</html>)
+
+i funkcije (Handlebars.registerHelper('formatDate', function(dateString) {
+    const originalDate = new Date(dateString);
+    const day = originalDate.getDate() < 10 ? '0' + originalDate.getDate() : originalDate.getDate();
+    const month = (originalDate.getMonth() + 1) < 10 ? '0' + (originalDate.getMonth() + 1) : (originalDate.getMonth() + 1);
+    const formattedDate = `${day}.${month}.${originalDate.getFullYear()}.`;
+    return formattedDate;
+});
+
+
+function checkString(str) {
+    return str === "Odbijeno" || str === "Za ovjeru";
+}
+)

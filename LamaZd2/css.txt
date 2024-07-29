@@ -1,0 +1,230 @@
+body {
+    font-family: 'Times New Roman';
+    font-size: 14px;
+}
+
+p { 
+    margin: 0px;
+}
+
+.paddingLeft{
+    padding-left: 5px;
+}
+
+.alignCentreMiddle{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.alignRightPaddingRight{
+    text-align: right;
+    padding-right: 5px
+}
+
+.alignImgCentre{
+    text-align: center;
+}
+
+.boldText{
+    font-weight:bold;
+}
+
+.centreMiddleBold{
+    width: 431px; 
+    height: 24.6px; 
+    text-align: center; 
+    vertical-align: middle; 
+    font-weight: bold;
+}
+
+.thirdColumnFtDimensionsPadding{
+    width: 71px; 
+    height: 24.6px; 
+    padding-left: 5px;
+}
+
+.fourthColumnFirstRowDimensionsPadding{
+    width: 133px;
+    height: 24.6px;
+    padding-left: 5px;
+}
+
+.frFtDimensionsPading{
+    width: 133px;
+    height: 24.6px;
+    padding-left: 5px;
+}
+
+.secondColumnThirdRowDimensionsCentre{
+    width: 431px;
+    height: 74px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.firstTable { 
+    margin-top: 110px;
+    margin-left: 83px;
+    margin-right: 44px;
+    width: 670px;
+    height: 123px;
+    border-collapse: collapse;
+    border: 2px solid #000000;
+}
+
+.firstTable td { 
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.firstTable td:nth-child(2) { 
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.firstTable td:nth-child(3) { 
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    vertical-align: middle;
+    
+}
+
+.firstTable td:nth-child(4) { 
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    vertical-align: middle;
+}
+
+.secondTable {
+    margin-top: 20px;
+    margin-left: 83px;
+    margin-right: 44px;
+    width: 670px;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+.secondTable tr:nth-child(1) {
+    height: 18.75pt;
+}
+
+.secondTable tr:nth-child(n+2) {
+    height: 32.25pt;
+}
+
+.secondTable td:nth-child(1) {
+    width: 36.4pt;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    vertical-align: middle;
+}
+
+.secondTable td:nth-child(2) {
+    width: 190.5pt;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    vertical-align: middle;
+}
+
+.secondTable td:nth-child(3) {
+    width: 125.25pt;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    vertical-align: middle;
+}
+
+.secondTable td:nth-child(4) {
+    width: 191.25pt;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    vertical-align: middle;
+}
+
+.thirdTable {
+    margin-top: 24px;
+    margin-left: 83px;
+    margin-right: 44px;
+    width: 670px;
+    border-collapse: collapse;
+    border: 2px solid #000000;
+}
+
+.thirdTable tr {
+    height: 21pt;
+}
+
+.thirdTable td:nth-child(1) {
+    width: 43.15pt;
+    height: 21pt;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.thirdTable td:nth-child(2) {
+    width: 81pt;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.thirdTable td:nth-child(3) {
+    width: 144pt;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.thirdTable td:nth-child(4) {
+    width: 143.25pt;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.thirdTable td:nth-child(5) {
+    width: 42pt;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.thirdTable td:nth-child(6) {
+    width: 87pt;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.fourthTable {
+    margin-top: 40px;
+    margin-left: 83px;
+    margin-right: 44px;
+    width: 196.15pt;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+.fourthTable td { 
+    border: 1px solid black;
+    border-bottom: 2px solid #000000;
+    text-align: left;
+    padding-left: 7px;
+}
+
+.fourthTablePara{
+    margin-left: 83px;
+    margin-right: 44px;
+    font-weight: bold;
+    top: -25px;
+    position: absolute;
+}
+
+.container {
+    position: relative;
+}
+
