@@ -1,7 +1,7 @@
 # Lama-Internship-Reports
 I developed and maintained Lama d.o.o.'s mock company reports using jsreport, JavaScript, HTML, CSS and JSON for 2 months.
 
-During my internship at LAMA d.o.o., I significantly enhanced my skills in HTML, CSS, JSON and JavaScript. I gained hands-on experience with the jsreport Playground and Chrome Handlebars engine. This frontend experience is invaluable for my future career. Working with the LAMA d.o.o. team also motivated me to pursue further learning and development, preparing me to advance my professional journey with the new knowledge and experience acquired during the internship.
+During my internship at LAMA d.o.o., I significantly enhanced my skills in HTML, CSS, JSON and JavaScript. I gained hands-on experience with the jsreport Playground and Chrome Handlebars engine. Working with the LAMA d.o.o. team motivated me to pursue further learning and development, preparing me to advance my professional journey with the new knowledge and experience acquired during the internship.
 
 Report examples:
 
