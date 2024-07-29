@@ -17,4 +17,6 @@ Report examples:
 
 ![Capture4](https://github.com/user-attachments/assets/4d4a7844-e8e8-42cb-bd1f-cebb7281833f)
 
+![Capture](https://github.com/user-attachments/assets/7d3f8a3c-6efc-43fa-97e5-29f20b44de09)
+
 ![Capture5](https://github.com/user-attachments/assets/25486579-72e1-4363-b715-90d8889181c1)
